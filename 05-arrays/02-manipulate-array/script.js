@@ -26,4 +26,19 @@
 
     // your code here
 
+    var button = document.getElementById("run");
+    button.addEventListener("click", function () {
+
+        var first = fruits.shift(); // remove Apple from the front
+
+        var last = fruits.pop(); // remove cerise (from the end)
+
+        var newLength = fruits.unshift('Banana'); // add to the front
+
+        var newLength = fruits.push('Kiwi'); // add to the end
+
+        console.log(fruits)
+
+    })
+
 })();

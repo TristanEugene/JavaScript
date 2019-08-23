@@ -28,4 +28,11 @@
 
     // your code here
 
+    const button = document.getElementById("run");
+    button.addEventListener("click", function () {
+
+        console.log(fruits[3]);
+
+    })
+
 })();

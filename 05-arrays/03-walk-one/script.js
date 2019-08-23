@@ -27,5 +27,14 @@
     ];
 
     // your code here
+    var button = document.getElementById("run");
+    button.addEventListener("click", function () {
+
+        fruits.forEach(function (item, index, array) {
+            console.log(item, index);
+
+        })
+
+    })
 
 })();
