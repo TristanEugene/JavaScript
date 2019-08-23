@@ -12,7 +12,7 @@
 (function() {
 
     // your code here
-    var button = document.getElementById("run");
+    const button = document.getElementById("run");
     button.addEventListener("click", function () {
 
         let userDays = document.getElementById("dob-day").value;
