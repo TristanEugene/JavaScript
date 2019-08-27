@@ -90,5 +90,16 @@
     ];
 
     // your code here
+    var button = document.getElementById("run");
+    button.addEventListener("click", function () {
+
+        function isOlderThan(person) {
+            return person.age >= 18;
+        }
+
+        var resultArray = people.filter(isOlderThan);
+        console.log(resultArray);
+
+    })
 
 })();
