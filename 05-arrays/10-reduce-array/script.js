@@ -90,5 +90,16 @@
     ];
 
     // your code here
+    var button = document.getElementById("run");
+    button.addEventListener("click", function () {
+
+        const sumOfAllAges = people.reduce((acc, currentValue) => {
+            //let age = acc + currentValue.age;
+            acc = acc + currentValue.age;
+            return acc
+        }, 0);
+        console.log(sumOfAllAges)
+
+    })
 
 })();

@@ -90,5 +90,15 @@
     ];
 
     // your code here
+    var button = document.getElementById("run");
+    button.addEventListener("click", function () {
+
+        function isJeanDupont(person) {
+            return person.email === 'jdupont@elpais.com';
+        }
+
+        console.log(people[people.findIndex(isJeanDupont)]);
+
+    })
 
 })();
