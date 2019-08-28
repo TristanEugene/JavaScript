@@ -13,4 +13,10 @@
 
     // your code here
 
+    var x = document.querySelectorAll(".material .target");
+
+    Array.from(x).forEach(function (y) {
+        y.innerHTML= "owned";
+
+    })
 })();
