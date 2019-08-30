@@ -48,31 +48,31 @@
 
         target.innerHTML += char;
 
-        var first = document.getElementsByClassName('1');
-        for (var n = 0; n < first.length; n++) {
-            first[n].style.fontSize = "0.5em";
-        }
+    }
 
-        var second = document.getElementsByClassName('2');
-        for (var n = 0; n < second.length; n++) {
-            second[n].style.fontSize = "1em";
-        }
+    var first = document.getElementsByClassName('1');
+    for (var n = 0; n < first.length; n++) {
+        first[n].style.fontSize = "0.5em";
+    }
 
-        var third = document.getElementsByClassName('3');
-        for (var n = 0; n < third.length; n++) {
-            third[n].style.fontSize = "1.5em";
-        }
+    var second = document.getElementsByClassName('2');
+    for (var n = 0; n < second.length; n++) {
+        second[n].style.fontSize = "1em";
+    }
 
-        var fourth = document.getElementsByClassName('4');
-        for (var n = 0; n < fourth.length; n++) {
-            fourth[n].style.fontSize = "2em";
-        }
+    var third = document.getElementsByClassName('3');
+    for (var n = 0; n < third.length; n++) {
+        third[n].style.fontSize = "1.5em";
+    }
 
-        var fifth = document.getElementsByClassName('5');
-        for (var n = 0; n < fifth.length; n++) {
-            fifth[n].style.fontSize = "2.5em";
-        }
+    var fourth = document.getElementsByClassName('4');
+    for (var n = 0; n < fourth.length; n++) {
+        fourth[n].style.fontSize = "2em";
+    }
 
+    var fifth = document.getElementsByClassName('5');
+    for (var n = 0; n < fifth.length; n++) {
+        fifth[n].style.fontSize = "2.5em";
     }
 
 })();
