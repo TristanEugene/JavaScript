@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /06-dom/10-match-password-two/script.js - 6.10: vérification de mots de passe (2)
+ * /06-dom/09-match-password-one/script.js - 6.9: vérification de mots de passe (1)
  *
  * coded by leny@BeCode
  * started at 26/10/2018
@@ -10,7 +10,32 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function () {
 
-    // your code here
+        const field = document.querySelectorAll(".field input");
+        // console.log(field);
+
+        function check(){
+            if (input1 == ""){
+                wrong();
+            }
+            else{
+                // console.log("fine");
+            }
+        }
+        function wrong(){
+            // console.log("wrong");
+            //field.forEach(elem => elem.style.border = "1px solid red");
+            field.forEach(elem => elem.classList.add('error'));
+
+        }
+        function reset(){
+            field.forEach(elem => elem.classList.remove('error'));
+        }
+        reset();
+        let input1 = document.querySelector(".field #pass-one").value;
+        let input2 = document.querySelector(".field #pass-two").value;
+        input1 ==  input2 ? check(): wrong();
+    });
 
 })();
