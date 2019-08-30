@@ -11,6 +11,21 @@
 
 (function() {
 
-    // your code here
+    Array.from(document.getElementsByTagName('button')).forEach(function(element) {
+        element.addEventListener('click', function() {
+            var inputField = element.parentElement.getElementsByTagName('input')[0];
+            var rawMin = inputField.getAttribute('data-min');
+            var min = +rawMin;
+            var max = +(inputField.getAttribute('data-max'));
 
+            var randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
+            inputField.value = String(randomNumber).padStart(rawMin.length, 0);
+
+            document.getElementById("target").innerHTML = "+0" +
+                document.getElementById('part-one').value +
+                document.getElementById('part-two').value +
+                document.getElementById('part-three').value +
+                document.getElementById('part-four').value;
+        });
+    });
 })();
