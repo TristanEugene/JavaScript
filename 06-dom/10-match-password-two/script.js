@@ -12,8 +12,25 @@
 (function() {
     document.getElementById("run").addEventListener("click", function () {
 
+        //with out functions
+
         const field = document.querySelectorAll(".field input");
         // console.log(field);
+        let input1 = document.querySelector(".field #pass-one").value;
+        let input2 = document.querySelector(".field #pass-two").value;
+
+        field.forEach(elem => elem.classList.remove('error')); // to reset first
+
+        if(input1 !==  input2 || input1 == ""){
+            field.forEach(elem => elem.classList.add('error'));
+        }
+
+        /* with functions
+
+        const field = document.querySelectorAll(".field input");
+        // console.log(field);
+        let input1 = document.querySelector(".field #pass-one").value;
+        let input2 = document.querySelector(".field #pass-two").value;
 
         function check(){
             if (input1 == ""){
@@ -33,9 +50,17 @@
             field.forEach(elem => elem.classList.remove('error'));
         }
         reset();
-        let input1 = document.querySelector(".field #pass-one").value;
-        let input2 = document.querySelector(".field #pass-two").value;
-        input1 ==  input2 ? check(): wrong();
+
+        if(input1 ==  input2){
+            check();
+        } else {
+            wrong();
+        }
+
+        //input1 ==  input2 ? check(): wrong(); // same in one line
+
+
+         */
     });
 
 })();
