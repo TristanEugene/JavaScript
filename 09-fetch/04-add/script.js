@@ -16,12 +16,7 @@
         .then(function (response) {
             return response.json();
         })
-        .then(function (data) {
-
-            const button = document.getElementById("run");
-            const inputName = document.getElementById("hero-name");
-            const inputAlter = document.getElementById("hero-alter-ego");
-            const inputPower = document.getElementById("hero-powers");
+        .then(function (data) {git
 
             document.getElementById("run").addEventListener("click", function () {
 
