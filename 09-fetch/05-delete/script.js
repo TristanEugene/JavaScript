@@ -11,4 +11,21 @@
 
 (() => {
     // your code here
+        fetch("http://localhost:63342/becode_projects/JavaScript/_shared/api.json")
+
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+
+        document.getElementById("run").addEventListener("click", function () {
+
+
+            let id = document.getElementById("hero-id").value;
+
+            console.log(data.heroes.splice(data.heroes.findIndex(hero => hero.id == id),1));
+            console.log(data);
+
+            });
+        });
 })();
