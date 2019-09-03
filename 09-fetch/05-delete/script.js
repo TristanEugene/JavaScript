@@ -23,8 +23,8 @@
 
             let id = document.getElementById("hero-id").value;
 
-            console.log(data.heroes.splice(data.heroes.findIndex(hero => hero.id == id),1));
-            console.log(data);
+            data.heroes.splice(data.heroes.findIndex(hero => hero.id == id),1);
+            console.log(data.heroes);
 
             });
         });
