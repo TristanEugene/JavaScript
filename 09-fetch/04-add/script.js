@@ -16,7 +16,7 @@
         .then(function (response) {
             return response.json();
         })
-        .then(function (data) {git
+        .then(function (data) {
 
             document.getElementById("run").addEventListener("click", function () {
 
