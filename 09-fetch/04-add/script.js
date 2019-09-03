@@ -11,4 +11,23 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function () {
+
+        let heroName = document.getElementById("hero-name").value;
+        let alter = document.getElementById("hero-alter-ego").value;
+        let power = document.getElementById("hero-powers").value;
+
+        fetch("http://localhost:63342/becode_projects/JavaScript/_shared/api.json")
+
+            .then(function (response) {
+                return response.json();
+            })
+
+            .then(function (data) {
+                let newid = data.heroes.length + 1;
+                data.heroes.push({id: newid, name: heroName, alterEgo: alter, abilities: power});
+
+                console.log(data)
+            });
+    });
 })();
