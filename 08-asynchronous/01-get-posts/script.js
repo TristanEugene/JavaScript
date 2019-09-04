@@ -23,8 +23,7 @@
             // myCallback(error, articles);
 
             console.log(articles);
-
         });
-
     });
+
 })();
