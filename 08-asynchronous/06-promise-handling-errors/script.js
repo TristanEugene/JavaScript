@@ -19,8 +19,8 @@
             console.log(articles);
 
         })
-        .then(function (error) {
-            console.log(error);
+        .catch(function (error) {
+            console.log(error.message);
 
         });
     });
