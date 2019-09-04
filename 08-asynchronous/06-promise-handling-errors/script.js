@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function (){
+
+        window.lib.getPersons()
+
+        .then(function (articles) {
+            console.log(articles);
+
+        })
+        .then(function (error) {
+            console.log(error);
+        });
+
+    });
+
 })();
