@@ -16,8 +16,13 @@
         window.lib.getPersons(function (error, articles) {
             // myCallback(error, articles);
 
-            console.log(error);
-            console.log(articles);
+            if (error) {
+                console.error(error);
+            }
+
+            else{
+                console.log(articles);
+            }
 
         });
     });
